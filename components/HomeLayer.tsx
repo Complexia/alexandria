@@ -1,5 +1,4 @@
 import discord from '../assets/discord.png';
-import Link from 'next/link';
 import Image from 'next/image';
 export const HomeLayer = ({ }) => {
     let text1 = "It is by restricting the flow of ideas, that the minds of people can be directed toward a particular purpose and remain oblivious to any opposing views. If ideas are removed from the public square, then a particular idea (good or bad) is left unchallenged. It is from the written word, that the fertile minds of the people, people that hunger for the truth, are watered. These cultivated minds become strong challengers, who are equipped of mind and tongue to oppose any rigid ideology."
@@ -20,13 +19,17 @@ export const HomeLayer = ({ }) => {
                 <h1 className="socials">{text3}</h1>
             </div>
             <div className="discord-logo">
-                <Link href="#">
+                <a
+                    href="https://discord.gg/sWy4QBtD4K"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
                     <Image
                         src={discord}
                         alt="discord logo"
 
                     />
-                </Link>
+                </a>
             </div>
         </div>
     );
